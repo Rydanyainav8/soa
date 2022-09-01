@@ -17,39 +17,39 @@ export default class ListChambre extends Component {
 
   render() {
     return (
-      <div>
+      <div className="tabla">
         <h4>Liste des chambres enregistrées</h4>
-
-        <table className="table">
-          <thead className="thead-dark">
-            <tr>
-              <th scope="col">Numero de porte</th>
-              <th scope="col">Catégorie</th>
-              <th scope="col">Etat</th>
-
-              <th scope="col"></th>
-            </tr>
-          </thead>
-
-          <tbody>
-            {this.props.chambres.map((chambre, index) => (
+        <div className="flex1 overflo">
+          <table className="table">
+            <thead className="thead-dark">
               <tr>
-                <td>{chambre.porte}</td>
-                <td>{this.getCategorieChambre(chambre.categorieId)}</td>
-                <td>{chambre.etat ? "Nettoyée" : "Non nettoyée"}</td>
-
-                <td>
-                  <span
-                    title="Suprimer"
-                    onClick={this.props.deleteChambre.bind(this, index)}
-                  >
-                    <FontAwesomeIcon icon={faTrashCan} />
-                  </span>
-                </td>
+                <th scope="">Numero de porte</th>
+                <th scope="">Catégorie</th>
+                <th scope="">Etat</th>
+                <th scope=""></th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+
+            <tbody>
+              {this.props.chambres.map((chambre, index) => (
+                <tr>
+                  <td>{chambre.porte}</td>
+                  <td>{this.getCategorieChambre(chambre.categorieId)}</td>
+                  <td>{chambre.etat ? "Nettoyée" : "Non nettoyée"}</td>
+
+                  <td>
+                    <span
+                      title="Suprimer"
+                      onClick={this.props.deleteChambre.bind(this, index)}
+                    >
+                      <FontAwesomeIcon icon={faTrashCan} />
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }

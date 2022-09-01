@@ -64,7 +64,7 @@ export default class Reservation extends Component {
   render() {
     return (
       <div>
-        <div className="Grand centre">
+        <div className="Grand">
           <FormReservation
             name={this.state.name}
             firstname={this.state.firstname}

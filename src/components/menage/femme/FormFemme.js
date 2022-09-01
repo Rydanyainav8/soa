@@ -8,15 +8,15 @@ export default class FormFemme extends Component {
 
   render() {
     return (
-      <div className="ajust460">
+      <div className="tabla ln">
         <div className="flex1">
           <h4 className="center">Enregistrement femme de ménage</h4>
 
           <form>
-            <div className="col-md-5">
+            <div className="">
               <label>Nom</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.handleChangeFemme}
                 value={this.props.name}
                 type="text"
@@ -25,10 +25,10 @@ export default class FormFemme extends Component {
               />
             </div>
 
-            <div className="col-md-5">
+            <div className="">
               <label>Prenoms</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.handleChangeFemme}
                 value={this.props.firstname}
                 type="text"
@@ -37,12 +37,12 @@ export default class FormFemme extends Component {
               />
             </div>
 
-            <div className="col-md-5">
+            <div className="">
               <label>Numero telephone</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.handleChangeFemme}
-                value={this.props.numero}
+                value={this.props.numero} 
                 type="text"
                 name="numero"
                 placeholder="Votre numero telephone..."

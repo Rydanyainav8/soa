@@ -52,7 +52,7 @@ export default class Chambre extends Component {
   render() {
     return (
       <div>
-        <div className="Grand centre mg cont">
+        <div className="Grand mg">
           <FormChambre
             categorieId={this.state.categorieId}
             porte={this.state.porte}

@@ -8,7 +8,7 @@ export default class FormReservation extends Component {
 
   render() {
     return (
-      <div>
+      <div className="tabla ln">
         <div className="flex1">
           <h4 className="center">Faire votre réservation</h4>
 
@@ -16,7 +16,7 @@ export default class FormReservation extends Component {
             <div className="col-md-5">
               <label>Nom</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.update}
                 value={this.props.name}
                 type="text"
@@ -28,7 +28,7 @@ export default class FormReservation extends Component {
             <div className="col-md-5">
               <label>Prenoms</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.update}
                 value={this.props.firstname}
                 type="text"
@@ -40,7 +40,7 @@ export default class FormReservation extends Component {
             <div className="col-md-5">
               <label>Numero de CIN</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.update}
                 value={this.props.numeroCin}
                 type="text"
@@ -51,7 +51,7 @@ export default class FormReservation extends Component {
 
             <div className="col-md-5">
               <label>Chambre à réserver</label>
-              <select
+              <select className="form-control rounded-1"
                 name="chambreId"
                 value={this.props.chambreId}
                 onChange={this.props.update}
@@ -65,7 +65,7 @@ export default class FormReservation extends Component {
             <div className="col-md-5">
               <label>Debut séjour</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.update}
                 value={this.props.start_date}
                 type="date"
@@ -76,7 +76,7 @@ export default class FormReservation extends Component {
             <div className="col-md-5">
               <label>Fin séjour</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.update}
                 value={this.props.end_date}
                 type="date"

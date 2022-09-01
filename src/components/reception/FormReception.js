@@ -9,14 +9,14 @@ export default class FormReception extends Component {
 
   render() {
     return (
-      <div>
+      <div className="ln">
           <div className="flex1">
             <h4 className="center">Création d'une facture</h4>
             <form>
               <div className="col-md-5">
                 <label>Numero</label>
                 <input
-                  className="form-control"
+                  className="form-control rounded-1"
                   onChange={this.props.handleChangeFacture}
                   value={this.props.numeroFacture}
                   type="text"
@@ -28,7 +28,7 @@ export default class FormReception extends Component {
               <div className="col-md-5">
                 <label>Nom du client</label>
                 <input
-                  className="form-control"
+                  className="form-control rounded-1"
                   onChange={this.props.handleChangeFacture}
                   value={this.props.nomClient}
                   type="text"
@@ -40,7 +40,7 @@ export default class FormReception extends Component {
               <div className="col-md-5">
                 <label>Date d'édition</label>
                 <input
-                  className="form-control"
+                  className="form-control rounded-1"
                   onChange={this.props.handleChangeFacture}
                   value={this.props.date_facture}
                   type="date"
@@ -51,7 +51,7 @@ export default class FormReception extends Component {
               <div className="col-md-5">
                 <label>Montant total</label>
                 <input
-                  className="form-control"
+                  className="form-control rounded-1"
                   onChange={this.props.handleChangeFacture}
                   value={this.props.montant_total}
                   type="number"

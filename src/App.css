@@ -84,3 +84,25 @@ span
 {
   width: 555px !important;
 }
+.text
+{
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 48px;
+}
+.tabla
+{
+  margin-left: 50px;
+}
+.ln
+{
+  line-height: 40px;
+}
+.overflo
+{
+  height: 400px;
+  overflow-y: scroll;
+}

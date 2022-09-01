@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default class ListNettoyage extends Component {
   render() {
     return (
-      <div>
-        <div className="flex1">
+      <div className="tabla ln">
           <h4>Liste des checking nettoyage</h4>
+        <div className="flex1 overflo">
 
           <table className="table">
             <thead className="thead-dark">

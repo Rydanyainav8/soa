@@ -5,7 +5,7 @@ export default class Home extends Component {
     render() {
         return (<div>
             <Navbar/>
-            
+            <div className='text'>Page d'accueil</div>
         </div>)
     }
 }

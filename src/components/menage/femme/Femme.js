@@ -54,7 +54,7 @@ export default class Femme extends Component {
   render() {
     return (
       <div>
-        <div className="Grand centre">
+        <div className="Grand mg">
           <FormFemme
             name={this.state.name}
             firstname={this.state.firstname}

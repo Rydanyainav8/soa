@@ -8,7 +8,7 @@ export default class FormCompta extends Component {
 
   render() {
     return (
-      <div>
+      <div className="ln">
         <div className="flex1">
           <h4 className="center">Ajouter un produit</h4>
 

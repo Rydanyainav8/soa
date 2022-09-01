@@ -74,7 +74,7 @@ export default class Nettoyage extends Component {
   render() {
     return (
       <div>
-        <div className="Grand centre">
+        <div className="Grand tabla">
           <FormNettoyage
             date_nettoyage={this.state.date_nettoyage}
             duree={this.state.duree}

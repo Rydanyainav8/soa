@@ -8,14 +8,14 @@ export default class FormNettoyage extends Component {
 
   render() {
     return (
-      <div className="ajust400x">
+      <div className="ln">
         <div className="flex1">
           <h4 className="center">Checking de nettoyage</h4>
 
           <form>
             <div className="col-md-5">
               <label>Femme de ménage responsable</label>
-              <select
+              <select className="form-control rounded-1"
                 name="femmeId"
                 value={this.props.femmeId}
                 onChange={this.props.handleChangeNettoyage}
@@ -28,7 +28,7 @@ export default class FormNettoyage extends Component {
 
             <div className="col-md-5">
               <label>Numero de chambre</label>
-              <select
+              <select className="form-control rounded-1"
                 name="chambreId"
                 value={this.props.chambreId}
                 onChange={this.props.handleChangeNettoyage}
@@ -42,7 +42,7 @@ export default class FormNettoyage extends Component {
             <div className="col-md-5">
               <label>Date du nettoyage</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.handleChangeNettoyage}
                 value={this.props.date_nettoyage}
                 type="date"
@@ -53,7 +53,7 @@ export default class FormNettoyage extends Component {
             <div className="col-md-5">
               <label>Durée</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.handleChangeNettoyage}
                 value={this.props.name}
                 type="text"

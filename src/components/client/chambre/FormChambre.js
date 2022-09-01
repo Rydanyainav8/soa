@@ -8,7 +8,7 @@ export default class FormChambre extends Component {
 
   render() {
     return (
-      <div>
+      <div className="tabla ln">
         <div className="flex1">
           <h4 className="center">Sauvegarde chambre</h4>
 
@@ -16,7 +16,7 @@ export default class FormChambre extends Component {
             <div className="col-md-5">
               <label>Porte</label>
               <input
-                className="form-control"
+                className="form-control rounded-1"
                 onChange={this.props.handleChangeChambre}
                 value={this.props.porte}
                 type="text"
@@ -27,7 +27,7 @@ export default class FormChambre extends Component {
 
             <div className="col-md-5">
               <label>Etat</label>
-              <select
+              <select className="form-control rounded-1"
                 name="etat"
                 value={this.props.etat}
                 onChange={this.props.handleChangeChambre}
@@ -39,7 +39,7 @@ export default class FormChambre extends Component {
 
             <div className="col-md-5">
               <label>Catégorie</label>
-              <select
+              <select className="form-control rounded-1"
                 name="categorieId"
                 value={this.props.categorieId}
                 onChange={this.props.handleChangeChambre}
